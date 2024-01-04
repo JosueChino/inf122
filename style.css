@@ -1,11 +1,17 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #e1c5cb;
 }
 h1 {
-    color: rgb(255,0, 0);
+    color: #DFF6FF;
     font-size: 25px;
     font-family: 'Segoe UI';
     background-color: black;
+}
+h2 {
+    color: #8634ea;
+    font-size: 25px;
+    font-family: 'Segoe UI';
+    background-color: rgb(102, 206, 244);
 }
 p {
     font-size: large;
@@ -34,4 +40,17 @@ ul li {
 }
 .etiqueta{
     background-color: blue;
+}
+.boton{
+    background-color: rgb(219, 229, 72);
+    border-radius: 5PX;
+
+}
+.boton1{
+    background-color: #ecf06b;
+    border-radius: 5PX;
+    
+}
+.entrada{
+    background-color: #f17639;
 }
