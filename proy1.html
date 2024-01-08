@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al mini proyecto</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <h1><font face="sans-serif">  Bienvenido al Mini Proyecto</font></h1>
+    <p><font face="sans-serif"> este proyecto muestra la integracion de conceptos de HTML, CSS Y javascript </font> </p>
+    <ul id="tarea-lista"> 
+        <li>Aprende a usar Github</li>
+        <li>Aprende a usar VSCode</li>
+    </ul>
+
+    <h2><font face="sans-serif">  TO DO List</font> </h2>
+
+    <form>
+        <input type="text" id="nueva-tarea" placeholder="agregar nueva tarea">
+        <button type="button" onclick="agregarTarea()" class="enviar">agregar tarea</button>
+    </form>
+    
+    <script> 
+        function agregarTarea(){
+            var tarea = document.getElementById("nueva-tarea").value;
+            var nuevoitem  = document.createElement("li");
+            nuevoitem.textContent = tarea;
+            document.getElementById("tarea-lista").appendChild(nuevoitem);
+            document.getElementById("nueva-tarea").value="";
+        }
+    </script>
+</body>
+</html>
+
